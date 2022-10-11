@@ -1,23 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
 *{
     margin: 0;
     padding: 0;
-    background-color:thistle;
 }
-
+body{
+   background: thistle;
+}
 header{
-   text-align: center;
-   font-size: 50px;
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   color:bisque;
-   margin-top: 30px;
+   box-sizing: border-box;
+   background-color: coral;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 10%;
+}
+h1, input, button{
+   font-family: serif sans-serif;
+   font-weight: 500px;
+   font-size: 20px;
+   color: black;
+   text-decoration: none;
+}
+h1{
+   font-size: 50px ;
+   color: whitesmoke;
 }
 input{
    width: 300px;
-   padding: 5px;
-   float: right;
-   margin-top: 40px;
-   margin-right: 70px;
-   border-radius: 20px;
+   border-radius: 10px;
+   height: 40px;
 
 }
 .btn{
@@ -25,11 +36,9 @@ input{
    border-radius: 5px;
    background-color: coral;
    margin-top: 70px;
-   float: right;
-   margin-left: 6px;
-   margin-bottom: 300px;
    color: aliceblue;
    margin-top:40px;
+   border: none;
 }
 .btn:hover{
    cursor: pointer;
@@ -37,11 +46,61 @@ input{
    color: black;
    
 }
-hr{
-   margin-top: 50px;
+.sidebar{
+   position: fixed;
+  left:0;
+  width: 250px;
+   height: 100%;
+   background: coral;
+   scroll-behavior: smooth;
+   scroll-snap-type: mandatory;
 }
-p{
-    font-family: 'Times New Roman', Times, serif;
+.sidebar header{
+   font-size: 20px;
+   color: white;
+   text-align: center;
+   line-height: 70px;
+   background: orangered;
+   user-select: none;
+}
+.sidebar ul{
+   display: block;
+   height: 100%;
+   width: 100%;
+   line-height: 65px;
+   font-size: 20px;
+   color: white;
+   padding-left: 40px;
+   box-sizing: border-box;
+   border-top: 1px solid rgba(255, 255, 255, .1);
+   border-bottom: 1px solid black;
+   transition: .4s;
+}
+ul li:hover{
+   padding-left: 50px;
+}
+#checkbox{
+   display: none;
+
+}
+h2{
+   margin-top: 20px;
+    margin-left: 300px;
+    font-family: Arial, sans-serif;
+    color: orangered;
+    text-align:left;
+    /* margin-bottom: 10px; */
+   width:700px;
+   border-radius: 20px;
+}
+
+ul li{
+   float:none;
+   list-style: none;
+}
+
+span{
+   font-family: Times New Roman Times, serif;
     text-align: center;
     font-size: 30px;
     font-style: italic;
@@ -49,70 +108,43 @@ p{
 }
 
 img{
-   width: 1000px;
+   width: 1250px;
    margin-bottom: 100px;
    margin-left: 250px;
-   
+   /* margin-top: 50px;  */
+   /* border-radius: 25px; */
 }
 
-h1{
-   margin-top: 20px;
-    margin-left: 400px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: crimson;
-    text-align: center;
-    margin-bottom: 10px;
-   border: 2px solid black;
-   width:900px;
-   background-color: coral;
-   border-radius: 20px;
 
-}
-.pref-el{
-   margin-left: 300px;
-   font-size: 50px;
-   font-family: monospace;
-}
 table{
    
-    margin-left: 100px;
-    width: 700px;
-    height: 20px;
-    float:inline-start;
+    margin-left: 500px;
+    width: 100px;
+    height: 200px;
     text-shadow: 30px;
-    font-size: 50px;
+    font-size: 30px;
+    margin-top: 300px;
     margin-bottom: 70px;
    
 }
-table:nth-child(even){
-   background-color: antiquewhite;
-}
-table:nth-child(odd){
-   background-color: gray;   
-}
-
 
 th{
     text-align: left;
+    background-color: antiquewhite;
 }
 
 td{
-    height: 50px
+    height: 50px;
+    background-color: azure;
+    width: 50px;
+    height: 100px;
 }
 
  table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-.description{
-   margin-left: 600px;
-   width: 300px;
-}
 
-span{
-   font-size: larger;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-}
 
  
