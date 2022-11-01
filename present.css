@@ -6,29 +6,31 @@
 body{
    background: thistle;
 }
+/* Header start */
 header{
-   box-sizing: border-box;
    background-color: coral;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 30px 10%;
+   height: 20px;  
 }
 h1, input, button{
    font-family: serif sans-serif;
-   font-weight: 500px;
-   font-size: 20px;
+   font-weight: 50px;
+   font-size: 10px;
    color: black;
    text-decoration: none;
 }
 h1{
-   font-size: 50px ;
-   color: whitesmoke;
-}
+   font-size: 20px ;
+   color: whitesmoke; 
+
+} 
 input{
-   width: 300px;
-   border-radius: 10px;
-   height: 40px;
+   width: 1200px;
+   height: 110px;
+   background: tomato;
+   border: none;
 
 }
 .btn{
@@ -46,10 +48,13 @@ input{
    color: black;
    
 }
+/* Header end */
+
+/* Sidebar start */
 .sidebar{
-   position: fixed;
+   position:fixed;
   left:0;
-  width: 250px;
+  width: 200px;
    height: 100%;
    background: coral;
    scroll-behavior: smooth;
@@ -65,10 +70,10 @@ input{
 }
 .sidebar ul{
    display: block;
-   height: 100%;
+   height: 50%;
    width: 100%;
-   line-height: 65px;
-   font-size: 20px;
+   line-height: 50px;
+   font-size: 10px;
    color: white;
    padding-left: 40px;
    box-sizing: border-box;
@@ -77,17 +82,17 @@ input{
    transition: .4s;
 }
 ul li:hover{
-   padding-left: 50px;
-}
-#checkbox{
-   display: none;
+   padding-left: 30px;
 
 }
+/* Sidebar end */
+
+/* Body start */
 h2{
    margin-top: 20px;
-    margin-left: 300px;
+    margin-left: 200px;
     font-family: Arial, sans-serif;
-    color: orangered;
+    color: bla;
     text-align:left;
     /* margin-bottom: 10px; */
    width:700px;
@@ -102,29 +107,29 @@ ul li{
 span{
    font-family: Times New Roman Times, serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 10px;
     font-style: italic;
     margin-bottom: 50px;
 }
 
 img{
-   width: 1250px;
-   margin-bottom: 100px;
-   margin-left: 250px;
+   width: 1300px;
+   margin-left: 200px;
    /* margin-top: 50px;  */
    /* border-radius: 25px; */
+   height: 500px;
 }
 
 
 table{
    
-    margin-left: 500px;
-    width: 100px;
-    height: 200px;
+    margin-left: 200px;
+    width:1300px;
+    height: 100px;
     text-shadow: 30px;
     font-size: 30px;
-    margin-top: 300px;
-    margin-bottom: 70px;
+    margin-top: 3px;
+    margin-bottom: 20px;
    
 }
 
@@ -144,7 +149,4 @@ td{
     border: 1px solid black;
     border-collapse: collapse;
 }
-
-
-
- 
+/* Body end */
